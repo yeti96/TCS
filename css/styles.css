@@ -3,10 +3,27 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body{
+   background: linear-gradient(120deg, #ffcbf2 0%, #deaaff 35%, #c0fdff 100% );
+}
 .nav-ul li{
     list-style: none;
 }
 .nav-ul a > img{
     height: 32px;
     width: 32px;
+}
+
+.profile-pics{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+.profile-pics a > img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.8);
 }
