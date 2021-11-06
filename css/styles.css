@@ -2,13 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 *{
-    font-family: 'Montserrat', 'Nunito', sans-serif, Arial, Helvetica;
-    list-style: none;
 }
+
+/*-----ETIQUETAS-----*/
 
 body{
    /*background: linear-gradient(120deg, #ffcbf2 0%, #deaaff 35%, #c0fdff 100% );*/
    background: linear-gradient(120deg, #ffcbf2 0%, #deaaff 35%, #c8e7ff 100% );
+   font-family: 'Montserrat', 'Nunito', sans-serif, Arial, Helvetica;
+
+
 }
 
 main{
@@ -16,18 +19,44 @@ main{
     position: relative;
     margin-left: 5%;
     margin-right: 5%;
-    padding: 0px;
+    padding: 1%;
     border: black solid;
+    
 }
 
+
+ul, ol, a{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+/*-----CLASS-----*/
 
 /* NAV */
-.nav-ul a > img{
+.nav__menu a{
+    display: inline-block;
+
+}
+
+.nav__ul a > img{
     height: 32px;
     width: 32px;
+    display: inline;
 }
-nav.nav-menu ul.nav-ul li a img{
+.nav__menu ul.nav-ul li a img{
     margin-right: 5px;
+}
+.nav__ul li{
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.nav__sublinks li{
+    display: inline-block;
+    
 }
 /*------------------------*/
 
