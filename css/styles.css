@@ -16,6 +16,9 @@ body{
     height: 32px;
     width: 32px;
 }
+nav.nav-menu ul.nav-ul li a img{
+    margin-right: 5px;
+}
 /*------------------------*/
 
 
@@ -45,4 +48,12 @@ body{
 ol.songs-list li img{
     width: 72px;
     height: 72px;
+}
+
+main{
+    display: inline-block;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
 }
