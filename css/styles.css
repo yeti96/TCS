@@ -16,7 +16,7 @@ main{
     position: relative;
     margin-left: 5%;
     margin-right: 5%;
-    padding: 20px;
+    padding: 0px;
     border: black solid;
 }
 
@@ -51,7 +51,7 @@ nav.nav-menu ul.nav-ul li a img{
 
 /*Disruptor logo (disr.html)*/
 .disr-logo img{
-    height: 50%;
+    height: 100%;
     width: 100%;
 }
 
