@@ -1,64 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-*{
-}
-
 /*-----ETIQUETAS-----*/
 
 body{
    /*background: linear-gradient(120deg, #ffcbf2 0%, #deaaff 35%, #c0fdff 100% );*/
-   background: linear-gradient(120deg, #ffcbf2 0%, #deaaff 35%, #c8e7ff 100% );
-   font-family: 'Montserrat', 'Nunito', sans-serif, Arial, Helvetica;
-
+    background: linear-gradient(140deg, #ffcbf2 0%, #deaaff 35%, #c8e7ff 100% );
+    font-family: 'Montserrat', 'Nunito', sans-serif, Arial, Helvetica;
+    line-height: 32px;
 
 }
 
 main{
-    display: inline-block;
-    position: relative;
     margin-left: 5%;
     margin-right: 5%;
-    padding: 1%;
-    border: black solid;
-    
 }
-
 
 ul, ol, a{
     list-style: none;
     text-decoration: none;
 }
 
+h1, h2{
+    text-transform: uppercase;
+    text-align: center;
+}
 
+h1{
+    font-size: 32px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+aside img{
+    display: inline-block;
+    margin-left: 60%;
+}
 
 /*-----CLASS-----*/
 
 /* NAV */
-.nav__menu a{
-    display: inline-block;
+.logo{
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    display:inline-block;
+    position: relative;
+    top: 15px;
+    border-radius: 5%;
+}
 
+.nav__ul{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.26);
+    text-align: right;
+    padding-right: 68px;
+    bottom: 120px;
+}
+
+.nav__ul  li {
+    display: inline-block;
+    position: relative;
+    bottom: 12px;
+    padding:10px;
 }
 
 .nav__ul a > img{
     height: 32px;
     width: 32px;
-    display: inline;
-}
-.nav__menu ul.nav-ul li a img{
-    margin-right: 5px;
-}
-.nav__ul li{
-    display: inline-block;
-    margin-right: 5px;
-    font-size: 16px;
+    padding: 3px;
+    position: relative;
+    top: 15px;
 }
 
-.nav__sublinks li{
-    display: inline-block;
-    
+.nav__ul li:hover > ul{
+    display:block;
+    background: linear-gradient(120deg, #ffcbf26c 0%, #deaaff6e 35%, #c8e7ff7a 100%);
+
 }
+
+.nav__ul li > ul {
+    display: none;
+    position: absolute;
+    text-align: left;
+    font-size: 14px;
+    padding:8px
+}
+
 /*------------------------*/
+
+
+
+/*-----WELCOME BANNER-----*/
+
 
 
 
@@ -73,7 +109,7 @@ ul, ol, a{
     height: 150px;
     width: 150px;
     border-style: solid;
-    border-color: rgb(190, 138, 249);
+    border-color: rgba(190, 138, 249, 0.425);
 }
 /*------------------------*/
 
@@ -93,4 +129,11 @@ img.alb-cover{
     width: 400px;
     height: 400px;
     border-radius: 8%;
+}
+
+
+.intro{
+    display: inline-block;
+    text-align: left;
+    margin-right: 40%;
 }
