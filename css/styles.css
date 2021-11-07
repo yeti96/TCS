@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-/*-----ETIQUETAS-----*/
 
+@font-face {
+    font-family: helveticaNeueLTPro;
+    src: url(../fonts/helveticaNeueLtPro/HelveticaNeueLTProMd.otf);
+}
+
+/*-----ETIQUETAS-----*/
 body{
    /*background: linear-gradient(120deg, #ffcbf2 0%, #deaaff 35%, #c0fdff 100% );*/
     background: linear-gradient(140deg, #f1a6df 0%, #d494fc 35%, #afd9fa 100% );
-    font-family: 'Montserrat', 'Nunito', sans-serif, Arial, Helvetica;
+    /*font-family: 'Montserrat', 'Nunito', sans-serif, Arial, Helvetica;*/
+    font-family:helveticaNeueLTPro;
     line-height: 28px;
 }
 
@@ -33,37 +39,42 @@ h2{
     font-size: 24px;
 }
 
-aside img{
-    display: inline-block;
+
+aside{
+    display: inline;
     margin-left: 60%;
 }
 
 /*-----CLASS-----*/
 
 /* NAV */
+
+
 .logo{
-    width: 100px;
-    height: 100px;
+    width: 156px;
+    height: 156px;
     z-index: 2;
     display:inline-block;
     position: relative;
-    top: 15px;
     border-radius: 5%;
+    margin-left: 50px;
+    top: 35px;
 }
 
 .nav__ul{
     position: relative;
-    background-color: rgba(255, 255, 255, 0.26);
+    background-color: rgba(255, 255, 255, 0.349);
     text-align: right;
-    padding-right: 68px;
+    padding: 20px;
     bottom: 120px;
+ 
 }
 
 .nav__ul li {
     display: inline-block;
     position: relative;
-    bottom: 12px;
-    padding:10px;
+    padding:15px;
+    margin-right: 3%;
 }
 
 .nav__ul a > img{
@@ -71,7 +82,7 @@ aside img{
     width: 32px;
     padding: 3px;
     position: relative;
-    top: 15px;
+    top: 12px;
 }
 
 .nav__ul li > ul{
@@ -86,10 +97,9 @@ aside img{
     display:block;
     background: linear-gradient(120deg, #ffcbf26c 0%, #deaaff6e 35%, #c8e7ff7a 100%);
 }
-.nav__ul li > ul :hover {
+.nav__ul ul :hover {
     transition: all 200ms;
 }
-
 
 /*------------------------*/
 
@@ -103,9 +113,9 @@ aside img{
 /* ARTIST PROFILE PICS (disr.html)*/
 
 .profile-pics{
-display: flex;
-flex-direction: row;
-justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .profile-pics a > img{
