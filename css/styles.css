@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
-
+/*-----FUENTE EXTERNA HELVETICA NEUE LT PRO-----*/
 @font-face {
     font-family: helveticaNeueLTPro;
     src: url(../fonts/helveticaNeueLtPro/HelveticaNeueLTProMd.otf);
@@ -13,17 +10,20 @@ body{
     background: linear-gradient(140deg, #f1a6df 0%, #d494fc 35%, #afd9fa 100% );
     /*font-family: 'Montserrat', 'Nunito', sans-serif, Arial, Helvetica;*/
     font-family:helveticaNeueLTPro;
+    color: black;
     line-height: 28px;
 }
 
+
 main{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 ul, ol, a{
     list-style: none;
     text-decoration: none;
+    color: black;
 }
 
 h1, h2{
@@ -33,22 +33,26 @@ h1, h2{
 
 h1{
     font-size: 42px;
+    margin-bottom: 60px;
+
 }
 
 h2{
     font-size: 24px;
 }
 
-
-aside{
-    display: inline;
-    margin-left: 60%;
+aside img{
+    display:inline-block;
+    position: relative;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 350px;
+    height: 350px;
 }
 
 /*-----CLASS-----*/
 
 /* NAV */
-
 
 .logo{
     width: 156px;
@@ -58,7 +62,7 @@ aside{
     position: relative;
     border-radius: 5%;
     margin-left: 50px;
-    top: 35px;
+    top: 40px;
 }
 
 .nav__ul{
@@ -67,19 +71,24 @@ aside{
     text-align: right;
     padding: 20px;
     bottom: 120px;
- 
+    font-size: 18px;
 }
 
 .nav__ul li {
     display: inline-block;
     position: relative;
     padding:15px;
-    margin-right: 3%;
+
+}
+.nav__ul li:hover{
+    background-color: rgba(255, 255, 255, 0.767);
+    transition: all 200ms;
+    border-radius: 7%;
 }
 
 .nav__ul a > img{
-    height: 32px;
-    width: 32px;
+    height: 36px;
+    width: 36px;
     padding: 3px;
     position: relative;
     top: 12px;
@@ -91,14 +100,23 @@ aside{
     text-align: center;
     font-size: 14px;
     padding:8px;
-
 }
+
 .nav__ul li:hover > ul{
     display:block;
     background: linear-gradient(120deg, #ffcbf26c 0%, #deaaff6e 35%, #c8e7ff7a 100%);
+    background-color: rgba(255, 255, 255, 0.767);
 }
-.nav__ul ul :hover {
-    transition: all 200ms;
+
+.nav__ul li ul li:hover{
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 17%;
+}
+
+.nav__ul li ul li:not(:hover){
+    transition: 100ms;
 }
 
 /*------------------------*/
@@ -119,13 +137,13 @@ aside{
 }
 
 .profile-pics a > img{
+    display: block;
     border-radius: 50%;
     height: 150px;
     width: 150px;
     border-style: solid;
     border-color: rgba(190, 138, 249, 0.425);
 }
-
 
 .profile-pics li a > img:hover{
     height: 200px;
@@ -161,5 +179,4 @@ img.alb-cover{
 .intro{
     display: inline-block;
     text-align: left;
-    margin-right: 40%;
 }
