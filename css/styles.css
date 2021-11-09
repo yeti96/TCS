@@ -4,27 +4,38 @@
     src: url(../fonts/helveticaNeueLtPro/HelveticaNeueLTProRoman.otf);
 }
 
-/*-----ETIQUETAS-----*/
+/*-----GENERAL TAGS-----*/
 body{
-   /*background: linear-gradient(120deg, #ffcbf2 0%, #deaaff 35%, #c0fdff 100% );*/
-    background: linear-gradient(140deg, #f1a6df 0%, #d494fc 35%, #afd9fa 100% );
-    /*font-family: 'Montserrat', 'Nunito', sans-serif, Arial, Helvetica;*/
-    font-family:helveticaNeueLTPro;
-    color: black;
+    z-index: 0;
+    font-family: 'helveticaNeueLTPro', 'Arial', sans-serif;
     line-height: 1.75rem;
-}
-
-nav{
-    display: block;
-}
-
-p{
-    text-indent: 0.5rem;
+    background: linear-gradient(140deg, #f1a6df 0%, #d494fc 35%, #afd9fa 100% );
+    color: black;
 }
 
 main{
     margin-left: 15%;
     margin-right: 15%;
+}
+
+h1, h2{
+    margin-bottom: 3.75rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.625rem;
+}
+
+h2{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1.0625rem;
+    text-indent: 0.46rem;
 }
 
 ul, ol, a{
@@ -33,44 +44,27 @@ ul, ol, a{
     color: black;
 }
 
-h1, h2{
-    text-transform: uppercase;
-    text-align: center;
-}
-
-h1{
-    font-size: 2.625rem;
-    margin-bottom: 3.75rem;
-}
-
-h2{
-    font-size: 1.5rem;
-}
-
-
-
-/*-----CLASS-----*/
 
 /*-----(index.html)-----*/
 
 .logo{
-    width: 9.75rem;
-    height: 9.75rem;
-    z-index: 2;
+    z-index: 1;
     display:inline-block;
     position: relative;
-    border-radius: 5%;
-    margin-left: 3.125rem;
-    top: 2.5rem;
+    width: 9rem;
+    height: 9rem;
+    margin-left: 4.550rem;
+    top: 0rem;
+    border-radius: 1rem;
 }
 
 .nav__ul{
     position: relative;
-    background-color: rgba(255, 255, 255, 0.349);
-    text-align: right;
-    padding: 1.25rem;
-    bottom: 7.5rem;
+    padding: 1rem;
+    bottom: 9rem;
     font-size: 1.125rem;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.349);
 }
 
 .nav__ul > li {
@@ -79,24 +73,24 @@ h2{
     padding:0.9375rem;
 }
 .nav__ul li:hover{
-    background-color: rgba(255, 255, 255, 0.767);
     transition: all 200ms;
+    background-color: rgba(255, 255, 255, 0.767);
     border-radius: 0.4675rem;
 }
 
 .nav__ul a > img{
-    height: 2.25rem;
-    width: 2.25rem;
     position: relative;
     top: 0.6875rem;
+    height: 2.25rem;
+    width: 2.25rem;
 }
 
 .nav__ul li > ul{
     display: none;
     position: absolute;
+    padding:0.5rem;
     text-align: center;
-    font-size: 14px;
-    padding:8px;
+    font-size: 1,142rem;
     margin-top: 0.875rem;
     right: 0rem;
 
@@ -109,13 +103,13 @@ h2{
 }
 
 .nav__ul li ul li{
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.6rem;
 }
 
 .nav__ul li ul li:hover{
-    background-color: white;
-    transform: scale(1.3);
     width: 100%;
+    transform: scale(1.3);
+    background-color: white;
 }
 
 .nav__ul li ul li:not(:hover){
@@ -127,14 +121,13 @@ h2{
 }
 
 .intro__section{
-    text-align: left;
     margin-left: 10%;
     margin-right: 10%;
+    text-align: left;
 }
 aside{
     margin-right: 20%;
     margin-left: 20%;
-
 }
 
 aside img{
@@ -149,10 +142,12 @@ aside img{
 
 
 
-/*-----WELCOME BANNER-----*/
-
-
 /*-----(disr.html)-----*/
+
+.disr-logo > img{
+    height: 100%;
+    width: 100%;
+}
 
 .profile-pics{
     display: flex;
@@ -162,20 +157,18 @@ aside img{
 
 .profile-pics a > img{
     display: inline-block;
-    border-radius: 50%;
-    height:9.375rem;
     width: 9.375rem;
+    height:9.375rem;
+    border-radius: 50%;
     border-style: solid;
     border-color: rgba(190, 138, 249, 0.425);
-    -webkit-filter:grayscale(85%);
-
+    -webkit-filter:grayscale(100%);
 }
 
 .profile-pics li a > img:hover{
-    transition: all 300ms;
     transform: scale(1.2);
+    transition: all 300ms;
     -webkit-filter:opacity(100%);
-
 }
 
 .profile-pics li a > img:not(:hover){
@@ -184,11 +177,8 @@ aside img{
 /*------------------------*/
 
 
-/*-----(disr.html)-----*/
-.disr-logo img{
-    height: 100%;
-    width: 100%;
-}
+
+/*-----(discgry.html subLinks)-----*/
 
 ol.songs-list li img{
     width: 4.5rem;
@@ -198,7 +188,25 @@ ol.songs-list li img{
 img.alb-cover{
     width: 25rem;
     height: 25rem;
-    border-radius: 8%;
     margin-right: 50%;
+    border-radius: 8%;
+}
 
+/*-----(discgry.html)-----*/
+.album__selection{
+    width: 100%;
+    border: solid;
+}
+
+.album__selection article{
+    width: 100%;
+}
+.album__selection article div{
+    display:inline-flex;
+    flex-direction:row;
+}
+
+.album__selection--disc a > img{
+    width: 300px;
+    height: 300px;
 }
