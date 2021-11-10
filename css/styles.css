@@ -44,6 +44,18 @@ ul, ol, a{
     color: black;
 }
 
+video{
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    left: -0.0625rem;
+    width: 100%;
+    bottom: 4rem;
+    padding-bottom: 3rem;
+}
+
+
 
 /*-----(index.html)-----*/
 
@@ -62,10 +74,12 @@ ul, ol, a{
     position: relative;
     padding: 1rem;
     bottom: 9rem;
+    margin-left: -10%;
     font-size: 1.125rem;
     text-align: right;
-    background-color: rgba(255, 255, 255, 0.349);
+    background: linear-gradient(120deg, #ffcbf2a2 0%, #deaaff9d 35%, #c0fdff9c 100% );
 }
+
 
 .nav__ul > li {
     display: inline-block;
@@ -100,10 +114,12 @@ ul, ol, a{
     display:block;
     background: linear-gradient(120deg, #ffcbf26c 0%, #deaaff6e 35%, #c8e7ff7a 100%);
     background-color: rgba(255, 255, 255, 0.767);
+
 }
 
 .nav__ul li ul li{
     padding-bottom: 0.6rem;
+    
 }
 
 .nav__ul li ul li:hover{
@@ -117,12 +133,19 @@ ul, ol, a{
 }
 
 .banner section > img{
-    border: solid;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    width: 100%;
+    height:auto;
+    margin-left: -16%;
 }
 
 .intro__section{
     margin-left: 10%;
     margin-right: 10%;
+    margin: 45% 10% 0% 10%;
     text-align: left;
 }
 aside{
@@ -188,22 +211,42 @@ ol.songs-list li img{
 img.alb-cover{
     width: 25rem;
     height: 25rem;
+    padding-top: 1rem;
     margin-right: 50%;
     border-radius: 8%;
 }
 
+.album__title {
+    position: relative;
+    color: white;
+    background-color: rgba(238, 130, 238, 0.24);
+    padding: 1rem;
+    margin-left: -30%;
+    margin-right: 15%;
+    text-align: right;
+}
+
+article > p{
+    margin-top: 15%;
+}
+
+
+
 /*-----(discgry.html)-----*/
 .album__selection{
     width: 100%;
-    border: solid;
 }
 
 .album__selection article{
     width: 100%;
+    display: inline;
+
 }
 .album__selection article div{
     display:inline-flex;
     flex-direction:row;
+    justify-content: space-around;
+    padding: 4rem;
 }
 
 .album__selection--disc a > img{
