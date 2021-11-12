@@ -190,13 +190,13 @@ aside img{
   border-radius: 50%;
   border-style: solid;
   border-color: rgba(190, 138, 249, 0.425);
-  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .profile-pics li a > img:hover{
-  transform: scale(1.2);
+  transform: scale(1.3);
   transition: all 300ms;
-  -webkit-filter:opacity(100%);
+  filter:opacity(100%);
 }
 
 .profile-pics li a > img:not(:hover){
