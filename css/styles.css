@@ -1,58 +1,66 @@
 /*-----FUENTE EXTERNA HELVETICA NEUE LT PRO-----*/
 @font-face {
-    font-family: helveticaNeueLTPro;
-    src: url(../fonts/helveticaNeueLtPro/HelveticaNeueLTProRoman.otf);
+  font-family: helveticaNeueLTPro;
+  src: url(../fonts/helveticaNeueLtPro/HelveticaNeueLTProRoman.otf);
 }
 
 /*-----GENERAL TAGS-----*/
 body{
-    z-index: 0;
-    font-family: 'helveticaNeueLTPro', 'Arial', sans-serif;
-    line-height: 1.75rem;
-    background: linear-gradient(140deg, #f1a6df 0%, #d494fc 35%, #afd9fa 100% );
-    color: black;
+  z-index: 0;
+  font-family:'helveticaNeueLTPro','Arial Narrow', sans-serif;
+  line-height: 1.75rem;
+  background: linear-gradient(140deg, #f1a6df 0%, #d494fc 35%, #afd9fa 100% );
+  color: black;
 }
 
 main{
-    margin-left: 15%;
-    margin-right: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 h1, h2{
-    margin-bottom: 3.75rem;
-    text-transform: uppercase;
-    text-align: center;
+  margin-bottom: 3.75rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 h1{
-    font-size: 2.625rem;
+  font-size: 2.625rem;
 }
 
 h2{
-    margin-top: 1.5rem;
-    font-size: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
 }
 
 p{
-    font-size: 1.0625rem;
-    text-indent: 0.46rem;
+  font-size: 1.0625rem;
+  text-indent: 0.46rem;
 }
 
+ /*separacion entre el contenido y el nav*/
+article > p{
+  text-align: left;
+  margin-left: 35%;
+}
+/*----------*/
+
 ul, ol, a{
-    list-style: none;
-    text-decoration: none;
-    color: black;
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
 video{
-    display: flex;
-    position: absolute;
-    z-index: -1;
-    top: 0%;
-    left: -0.0625rem;
-    width: 100%;
-    bottom: 4rem;
-    padding-bottom: 3rem;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 80%;
+  top: 0%;
+  left: -0.0625rem;
+  bottom: 4rem;
+  padding-bottom: 3rem;
+  object-fit:cover;
 }
 
 
@@ -60,142 +68,139 @@ video{
 /*-----(index.html)-----*/
 
 .logo{
-    z-index: 1;
-    display:inline-block;
-    position: relative;
-    width: 9rem;
-    height: 9rem;
-    margin-left: 4.550rem;
-    top: 0rem;
-    border-radius: 1rem;
+  z-index: 1;
+  display:inline-block;
+  position: relative;
+  width: 9rem;
+  height: 9rem;
+  margin-left: 4.550rem;
+  top: 0rem;
+  border-radius: 1rem;
 }
 
 .nav__ul{
-    position: relative;
-    padding: 1rem;
-    bottom: 9rem;
-    margin-left: -10%;
-    font-size: 1.125rem;
-    text-align: right;
-    background: linear-gradient(120deg, #ffcbf2a2 0%, #deaaff9d 35%, #c0fdff9c 100% );
+  position: relative;
+  padding: 1rem;
+  bottom: 9rem;
+  margin-left: -10%;
+  font-size: 1.125rem;
+  text-align: right;
+  background: linear-gradient( 120deg, #ffcbf2a2 0%, #deaaff9d 35%, #c0fdff9c 100% );
 }
 
 
 .nav__ul > li {
-    display: inline-block;
-    position: relative;
-    padding:0.9375rem;
+  display: inline-block;
+  position: relative;
+  padding:0.9375rem;
 }
 .nav__ul li:hover{
-    transition: all 200ms;
-    background-color: rgba(255, 255, 255, 0.767);
-    border-radius: 0.4675rem;
+  transition: all 200ms;
+  background-color: rgba(255, 255, 255, 0.767);
+  border-radius: 0.4675rem;
 }
 
 .nav__ul a > img{
-    position: relative;
-    top: 0.6875rem;
-    height: 2.25rem;
-    width: 2.25rem;
+  position: relative;
+  top: 0.6875rem;
+  height: 2.25rem;
+  width: 2.25rem;
 }
 
 .nav__ul li > ul{
-    display: none;
-    position: absolute;
-    padding:0.5rem;
-    text-align: center;
-    font-size: 1,142rem;
-    margin-top: 0.875rem;
-    right: 0rem;
-
+  display: none;
+  position: absolute;
+  padding:0.5rem;
+  text-align: center;
+  font-size: 1,142rem;
+  margin-top: 0.875rem;
+  right: 0rem;
 }
 
 .nav__ul li:hover > ul{
-    display:block;
-    background: linear-gradient(120deg, #ffcbf26c 0%, #deaaff6e 35%, #c8e7ff7a 100%);
-    background-color: rgba(255, 255, 255, 0.767);
-
+  display:block;
+  background: linear-gradient(120deg, #ffcbf26c 0%, #deaaff6e 35%, #c8e7ff7a 100%);
+  background-color: rgba(255, 255, 255, 0.61);
 }
 
 .nav__ul li ul li{
-    padding-bottom: 0.6rem;
-    
+  padding-bottom: 0.6rem;
 }
 
 .nav__ul li ul li:hover{
-    width: 100%;
-    transform: scale(1.3);
-    background-color: white;
+  width: 100%;
+  transform: scale(1.2);
+  background-color: white;
 }
 
 .nav__ul li ul li:not(:hover){
-    transition: 100ms;
+  transition: 100ms;
 }
 
 .banner section > img{
-    display: flex;
-    position: absolute;
-    z-index: -1;
-    top: 0%;
-    width: 100%;
-    height:auto;
-    margin-left: -16%;
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  top: 0%;
+  left: -0.0625rem;
+  width: 100%;
+  height:80vh;
+  object-fit: cover;
 }
 
 .intro__section{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin: 45% 10% 0% 10%;
-    text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin: 45% 10% 0% 10%;
+  text-align: left;
 }
 aside{
-    margin-right: 20%;
-    margin-left: 20%;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
 aside img{
-    width: 25.125rem;
-    height: 25.125rem;
-    margin-right: 20%;
-    margin-left: 20%;
-    border: solid;
+  width: 25.125rem;
+  height: 25.125rem;
+  margin-right: 20%;
+  margin-left: 20%;
+  border: solid;
 }
 
 /*------------------------*/
 
 
-
 /*-----(disr.html)-----*/
 
 .disr-logo > img{
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .profile-pics{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
 }
 
 .profile-pics a > img{
-    display: inline-block;
-    width: 9.375rem;
-    height:9.375rem;
-    border-radius: 50%;
-    border-style: solid;
-    border-color: rgba(190, 138, 249, 0.425);
-    -webkit-filter:grayscale(100%);
+  display: inline-block;
+  width: 9.375rem;
+  height:9.375rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: rgba(190, 138, 249, 0.425);
+  -webkit-filter:grayscale(100%);
 }
 
 .profile-pics li a > img:hover{
-    transform: scale(1.2);
-    transition: all 300ms;
-    -webkit-filter:opacity(100%);
+  transform: scale(1.2);
+  transition: all 300ms;
+  -webkit-filter:opacity(100%);
 }
 
 .profile-pics li a > img:not(:hover){
-    transition: all 300ms;
+  transition: all 300ms;
 }
 /*------------------------*/
 
@@ -204,52 +209,56 @@ aside img{
 /*-----(discgry.html subLinks)-----*/
 
 ol.songs-list li img{
-    width: 4.5rem;
-    height: 4.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
 img.alb-cover{
-    width: 25rem;
-    height: 25rem;
-    padding-top: 1rem;
-    margin-right: 50%;
-    border-radius: 8%;
+  width: 24rem;
+  height: 24rem;
+  border-radius: 1rem;
+  box-shadow: 27px 27px 20px rgba(0, 0, 0, 0.712);
 }
 
-.album__title {
-    position: relative;
-    color: white;
-    background-color: rgba(238, 130, 238, 0.24);
-    padding: 1rem;
-    margin-left: -30%;
-    margin-right: 15%;
-    text-align: right;
+.album__title{
+  position: relative;
+  color: white;
+  z-index: -1;
+  background-color: rgba(238, 130, 238, 0.24);
+  padding: 1rem;
+  top: 10rem;
+  margin-left: -30%;
+  margin-right: 15%;
+  text-align: right;
+
 }
-
-article > p{
-    margin-top: 15%;
-}
-
-
 
 /*-----(discgry.html)-----*/
-.album__selection{
-    width: 100%;
-}
 
-.album__selection article{
-    width: 100%;
-    display: inline;
-
-}
 .album__selection article div{
-    display:inline-flex;
-    flex-direction:row;
-    justify-content: space-around;
-    padding: 4rem;
+  display:inline-flex;
+  flex-direction:row;
+  justify-content: space-between;
+  padding: 5rem;
+
 }
 
-.album__selection--disc a > img{
-    width: 300px;
-    height: 300px;
+.album__selection--disc img{
+  width: 18.75rem;
+  height: 18.75rem;
+  box-shadow: 0px 10px 35px;
+  border-radius: 1rem;
+}
+
+.album__selection--disc img:hover{
+  transition: all 500ms;
+  transform:rotateZ(25deg);
+}
+
+.album__selection--disc img:not(:hover){
+  transition: all 200ms;
+}
+
+footer{
+  text-align: center;
 }
