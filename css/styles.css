@@ -13,9 +13,10 @@ body{
   color: black;
 }
 
-main{
-  margin: 10%;
+article{
+  margin: 0% 10% 0% 10%;
 }
+
 h1, h2{
   margin-bottom: 3.75rem;
   text-transform: uppercase;
@@ -66,13 +67,11 @@ video{
 
 .logo{
   z-index: 1;
-  display:inline-block;
   position: relative;
-  width: 9rem;
-  height: 9rem;
-  margin-left: 4.550rem;
-  top: 0rem;
-  border-radius: 1rem;
+  width: 145px;
+  height: 145px;
+  margin-left: 72px;
+  border-radius: 16px;
 }
 
 .nav__ul{
@@ -85,16 +84,19 @@ video{
   background: linear-gradient( 120deg, #ffcbf2a2 0%, #deaaff9d 35%, #c0fdff9c 100% );
 }
 
-
 .nav__ul > li {
   display: inline-block;
   position: relative;
   padding:0.9375rem;
 }
+
 .nav__ul li:hover{
   transition: all 200ms;
   background-color: rgba(255, 255, 255, 0.767);
-  border-radius: 0.4675rem;
+  border-radius: 8px;
+}
+.nav__ul li:not(:hover){
+  transition: 100ms;
 }
 
 .nav__ul a > img{
@@ -139,16 +141,17 @@ video{
   position: absolute;
   z-index: -1;
   top: 0%;
-  left: -0.0625rem;
+  left: -1px;
   width: 100%;
   height:80vh;
   object-fit: cover;
 }
 
 .intro__section{
-  margin-left: 10%;
-  margin-right: 10%;
-  margin: 45% 10% 0% 10%;
+  display: flex;
+  flex-flow: row wrap;
+  margin:30% 10% 0% 10%;
+  background-color: rgba(0, 0, 0, 0.11);
   text-align: left;
 }
 aside{
@@ -157,8 +160,8 @@ aside{
 }
 
 aside img{
-  width: 25.125rem;
-  height: 25.125rem;
+  width: 400px;
+  height: 400px;
   margin-right: 20%;
   margin-left: 20%;
   border: solid;
@@ -180,12 +183,13 @@ aside img{
   justify-content:space-around;
 }
 
-.profile-pics a > img{
-  display: inline-block;
-  width: 9.375rem;
-  height:9.375rem;
+.profile-pics img{
+  display: flex;
+  flex-flow: row wrap;
+  width: 150px;
+  height:150px;
   border-radius: 50%;
-  border-style: solid;
+  border-style:solid;
   border-color: rgba(190, 138, 249, 0.425);
   filter: grayscale(100%);
 }
@@ -202,32 +206,33 @@ aside img{
 /*------------------------*/
 
 
-
 /*-----(discgry.html subLinks)-----*/
 
-ol.songs-list li img{
-  width: 4.5rem;
-  height: 4.5rem;
-}
+
 
 img.alb-cover{
-  width: 24rem;
-  height: 24rem;
+  display: flex;
+  flex-flow: row wrap;
+  width: 350px;
+  height: 350px;
   border-radius: 1rem;
-  box-shadow: 27px 27px 20px rgba(0, 0, 0, 0.712);
+  box-shadow: 27px 27px 20px rgba(0, 0, 0, 0.534);
 }
 
 .album__title{
-  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 1rem;
+  margin-left: -30%;
+  margin-right: 20%;
   color: white;
   z-index: -1;
-  background-color: rgba(238, 130, 238, 0.24);
-  padding: 1rem;
-  top: 10rem;
-  margin-left: -30%;
-  margin-right: 15%;
-  text-align: right;
+  background-color: rgba(238, 130, 238, 0.151);
+}
 
+ol.songs-list li img{
+  width: 64px;
+  height: 64px;
 }
 
 /*-----(discgry.html)-----*/
@@ -239,16 +244,13 @@ img.alb-cover{
   column-gap: 2rem;
   row-gap: 2rem;
   justify-content: center;
-  align-items: center;
 }
-
 
 .album__selection--disc img{
   width:350px;
   height:350px;
   box-shadow: 0px 10px 35px;
   border-radius: 1rem;
-  align-content: center;
 }
 
 .album__selection--disc img:hover{
