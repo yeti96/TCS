@@ -14,10 +14,8 @@ body{
 }
 
 main{
-  margin-left: 15%;
-  margin-right: 15%;
+  margin: 10%;
 }
-
 h1, h2{
   margin-bottom: 3.75rem;
   text-transform: uppercase;
@@ -62,7 +60,6 @@ video{
   padding-bottom: 3rem;
   object-fit:cover;
 }
-
 
 
 /*-----(index.html)-----*/
@@ -235,24 +232,28 @@ img.alb-cover{
 
 /*-----(discgry.html)-----*/
 
-.album__selection article div{
-  display:inline-flex;
-  flex-direction:row;
-  justify-content: space-between;
-  padding: 5rem;
-
+.album__selection article{
+  display: grid;
+  grid-template-columns: 30% 30%;
+  grid-template-rows: 35% 35% ;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
+
 .album__selection--disc img{
-  width: 18.75rem;
-  height: 18.75rem;
+  width:350px;
+  height:350px;
   box-shadow: 0px 10px 35px;
   border-radius: 1rem;
+  align-content: center;
 }
 
 .album__selection--disc img:hover{
-  transition: all 500ms;
-  transform:rotateZ(25deg);
+  transition: all 400ms;
+  transform:rotate(7deg);
 }
 
 .album__selection--disc img:not(:hover){
@@ -261,4 +262,32 @@ img.alb-cover{
 
 footer{
   text-align: center;
+}
+
+
+
+/*-----MEDIA QUERIES-----*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
