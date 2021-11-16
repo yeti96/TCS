@@ -111,7 +111,7 @@ video{
   position: absolute;
   padding:0.5rem;
   text-align: center;
-  font-size: 1,142rem;
+  font-size: 1.142rem;
   margin-top: 0.875rem;
   right: 0rem;
 }
@@ -265,8 +265,6 @@ ol.songs-list li img{
 footer{
   text-align: center;
 }
-
-
 
 /*-----MEDIA QUERIES-----*/
 
