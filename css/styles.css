@@ -13,36 +13,26 @@ body{
   color: black;
 }
 
-article{
-  margin: 0% 10% 0% 10%;
-}
 
 h1, h2{
-  margin-bottom: 3.75rem;
-  text-transform: uppercase;
+  padding: 30px 30px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 h1{
-  font-size: 2.625rem;
+  font-size: 42px;
 }
 
 h2{
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
+  margin-top: 24px;
+  font-size: 24px;
 }
 
 p{
-  font-size: 1.0625rem;
-  text-indent: 0.46rem;
+  font-size: 17px;
+  text-indent: 7px;
 }
-
- /*separacion entre el contenido y el nav*/
-article > p{
-  text-align: left;
-  margin-left: 35%;
-}
-/*----------*/
 
 ul, ol, a{
   list-style: none;
@@ -57,10 +47,12 @@ video{
   height: 80%;
   top: 0%;
   left: -0.0625rem;
-  bottom: 4rem;
-  padding-bottom: 3rem;
+  bottom: 64px;
+  padding-bottom: 48px;
   object-fit:cover;
 }
+
+
 
 
 /*-----(index.html)-----*/
@@ -75,19 +67,19 @@ video{
 }
 
 .nav__ul{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
   position: relative;
-  padding: 1rem;
-  bottom: 9rem;
-  margin-left: -10%;
-  font-size: 1.125rem;
-  text-align: right;
+  bottom: 144px;
+  font-size: 18px;
   background: linear-gradient( 120deg, #ffcbf2a2 0%, #deaaff9d 35%, #c0fdff9c 100% );
 }
 
-.nav__ul > li {
+.nav__ul li {
   display: inline-block;
   position: relative;
-  padding:0.9375rem;
+  padding:10px;
 }
 
 .nav__ul li:hover{
@@ -95,39 +87,34 @@ video{
   background-color: rgba(255, 255, 255, 0.767);
   border-radius: 8px;
 }
+
 .nav__ul li:not(:hover){
-  transition: 100ms;
+  transition:all 100ms;
 }
 
 .nav__ul a > img{
   position: relative;
-  top: 0.6875rem;
-  height: 2.25rem;
-  width: 2.25rem;
+  top: 10px;
+  height: 32px;
+  width: 32px;
 }
 
-.nav__ul li > ul{
+.nav__ul li ul{
   display: none;
-  position: absolute;
-  padding:0.5rem;
+  padding:0%;
+  top:100%;
+  left: 0%;
   text-align: center;
-  font-size: 1.142rem;
-  margin-top: 0.875rem;
-  right: 0rem;
 }
 
 .nav__ul li:hover > ul{
-  display:block;
+  display:flex;
+  flex-flow: column wrap;
+  position:absolute;
   background: linear-gradient(120deg, #ffcbf26c 0%, #deaaff6e 35%, #c8e7ff7a 100%);
-  background-color: rgba(255, 255, 255, 0.61);
-}
-
-.nav__ul li ul li{
-  padding-bottom: 0.6rem;
 }
 
 .nav__ul li ul li:hover{
-  width: 100%;
   transform: scale(1.2);
   background-color: white;
 }
@@ -149,22 +136,18 @@ video{
 
 .intro__section{
   display: flex;
-  flex-flow: row wrap;
-  margin:30% 10% 0% 10%;
+  justify-content: space-between;
+  align-content: center;
+  margin:20% 0%;
   background-color: rgba(0, 0, 0, 0.11);
-  text-align: left;
 }
-aside{
-  margin-right: 20%;
-  margin-left: 20%;
+
+.intro{
+  padding: 40px;
 }
 
 aside img{
-  width: 400px;
-  height: 400px;
-  margin-right: 20%;
-  margin-left: 20%;
-  border: solid;
+  height: 100vh;
 }
 
 /*------------------------*/
@@ -172,7 +155,7 @@ aside img{
 
 /*-----(disr.html)-----*/
 
-.disr-logo > img{
+.disr-logo img{
   height: 100%;
   width: 100%;
 }
@@ -184,8 +167,6 @@ aside img{
 }
 
 .profile-pics img{
-  display: flex;
-  flex-flow: row wrap;
   width: 150px;
   height:150px;
   border-radius: 50%;
@@ -195,34 +176,33 @@ aside img{
 }
 
 .profile-pics li a > img:hover{
-  transform: scale(1.3);
-  transition: all 300ms;
+  transform: scale(1.2);
+  transition: all 200ms;
   filter:opacity(100%);
 }
 
 .profile-pics li a > img:not(:hover){
-  transition: all 300ms;
+  transition: all 100ms;
 }
 /*------------------------*/
 
 
+
 /*-----(discgry.html subLinks)-----*/
-
-
 
 img.alb-cover{
   display: flex;
   flex-flow: row wrap;
   width: 350px;
   height: 350px;
-  border-radius: 1rem;
+  border-radius: 16px;
   box-shadow: 27px 27px 20px rgba(0, 0, 0, 0.534);
 }
 
 .album__title{
   display: flex;
   flex-direction: row-reverse;
-  padding: 1rem;
+  padding: 16px;
   margin-left: -30%;
   margin-right: 20%;
   color: white;
@@ -241,8 +221,8 @@ ol.songs-list li img{
   display: grid;
   grid-template-columns: 30% 30%;
   grid-template-rows: 35% 35% ;
-  column-gap: 2rem;
-  row-gap: 2rem;
+  column-gap: 32px;
+  row-gap: 32px;
   justify-content: center;
 }
 
@@ -250,21 +230,23 @@ ol.songs-list li img{
   width:350px;
   height:350px;
   box-shadow: 0px 10px 35px;
-  border-radius: 1rem;
+  border-radius: 16px;
 }
 
 .album__selection--disc img:hover{
-  transition: all 400ms;
-  transform:rotate(7deg);
+  transition: all 200ms;
+  transform:rotate(5deg);
 }
 
 .album__selection--disc img:not(:hover){
-  transition: all 200ms;
+  transition: all 100ms;
 }
 
 footer{
   text-align: center;
 }
+
+
 
 /*-----MEDIA QUERIES-----*/
 
