@@ -11,6 +11,7 @@ body{
   line-height: 1.75rem;
   background: linear-gradient(140deg, #f1a6df 0%, #d494fc 35%, #afd9fa 100% );
   color: black;
+  margin: 0%;
 }
 
 
@@ -52,8 +53,9 @@ video{
   object-fit:cover;
 }
 
-
-
+footer{
+  text-align: center;
+}
 
 /*-----(index.html)-----*/
 
@@ -65,6 +67,7 @@ video{
   margin-left: 72px;
   border-radius: 16px;
 }
+
 
 .nav__ul{
   display: flex;
@@ -111,7 +114,9 @@ video{
   display:flex;
   flex-flow: column wrap;
   position:absolute;
-  background: linear-gradient(120deg, #ffcbf26c 0%, #deaaff6e 35%, #c8e7ff7a 100%);
+  /* background: linear-gradient(120deg, #ffcbf26c 0%, #deaaff6e 35%, #c8e7ff7a 100%); */
+  background: linear-gradient(120deg,  #deaaff 0%,#c8e7ff 35%, #ffcbf2 100%);
+
 }
 
 .nav__ul li ul li:hover{
@@ -125,9 +130,9 @@ video{
 
 .banner section > img{
   display: flex;
-  position: absolute;
+  position: relative;
   z-index: -1;
-  top: 0%;
+  top: -250px;
   left: -1px;
   width: 100%;
   height:80vh;
@@ -136,18 +141,14 @@ video{
 
 .intro__section{
   display: flex;
-  justify-content: space-between;
-  align-content: center;
-  margin:20% 0%;
+  justify-content: row wrap;
+  padding: 5%;
   background-color: rgba(0, 0, 0, 0.11);
 }
 
-.intro{
-  padding: 40px;
-}
-
 aside img{
-  height: 100vh;
+  height: 60vh;
+  margin-left: 5%;
 }
 
 /*------------------------*/
@@ -187,6 +188,32 @@ aside img{
 /*------------------------*/
 
 
+/*-----(discgry.html)-----*/
+
+.album__selection article{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 430px;
+  margin: 0% 8% 0% 8%;
+  justify-items: center;
+  align-items: center;
+}
+
+.album__selection--disc img{
+  width:350px;
+  height:350px;
+  box-shadow: 0px 10px 35px;
+  border-radius: 16px;
+}
+
+.album__selection--disc img:hover{
+  transition: all 200ms;
+  transform:rotate(5deg);
+}
+
+.album__selection--disc img:not(:hover){
+  transition: all 100ms;
+}
 
 /*-----(discgry.html subLinks)-----*/
 
@@ -215,61 +242,5 @@ ol.songs-list li img{
   height: 64px;
 }
 
-/*-----(discgry.html)-----*/
-
-.album__selection article{
-  display: grid;
-  grid-template-columns: 30% 30%;
-  grid-template-rows: 35% 35% ;
-  column-gap: 32px;
-  row-gap: 32px;
-  justify-content: center;
-}
-
-.album__selection--disc img{
-  width:350px;
-  height:350px;
-  box-shadow: 0px 10px 35px;
-  border-radius: 16px;
-}
-
-.album__selection--disc img:hover{
-  transition: all 200ms;
-  transform:rotate(5deg);
-}
-
-.album__selection--disc img:not(:hover){
-  transition: all 100ms;
-}
-
-footer{
-  text-align: center;
-}
 
 
-
-/*-----MEDIA QUERIES-----*/
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
