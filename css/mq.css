@@ -2,59 +2,6 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    /* body{
-        margin: 0px;
-    }
-    header{
-
-        /* 
-        margin: 0%;
-        padding: 0%;
-
-        flex-flow: column wrap;
-        
-        position: flex;
-        background: rgba(0, 0, 0, 0.5);
-        
-    }
-
-    a .logo{
-        width: 50px;
-        height: 50px;
-        top: 0px;
-        margin: 0%;
-    }
-    .nav__menu{
-        margin-left: 75%;
-        margin-right: 0%;
-        height: 100vh;
-        background: linear-gradient(140deg, #f1a6df 0%, #d494fc 35%, #afd9fa 100% );
-
-    }
-
-    .nav__ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        top: 0px;
-        padding: 0px;
-
-        font-size: 12px;
-        background:transparent;
-    }
-    .nav__ul img{
-        display: none;
-    }
-
-    .nav__ul li ul{
-        display: flex;
-        flex-flow: column wrap;
-        position: relative;
-        text-align: left;
-        line-height: 1rem;
-      }
-
     .intro__section{
         display: flex;
         flex-flow: row wrap;
@@ -63,28 +10,53 @@
       }
 
       .banner section > img{
-        height:47vh;
-        left: -5px;
         object-fit:contain;
-      } */
+      } 
 
-  }
+      .intro__section{
+        display: flex;
+        flex-flow: column wrap;
+      }
+
+      .intro{
+          margin: 0%;
+          padding: 0%;
+      }
+      .intro p{
+          font-size: 10px;
+      }
+      aside > img{
+        margin: 0%;
+        transform: scale(0.8);
+    } 
+}
+    
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
-  
+    .logo{
+        transform: scale(0.5);
+    }
+    .intro__section{
+        display: flex;
+        flex-flow: column wrap;
+      }
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-  
+    .logo{
+        transform: scale(0.6);
+    }
   }
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
-  
+    .logo{
+        transform: scale(1);
+    }
   }
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
-  
+
   }
