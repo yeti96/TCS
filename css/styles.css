@@ -20,18 +20,19 @@ h1, h2{
   text-transform: uppercase;
 }
 
-h1{
-  font-size:42px;
-}
+h1{font-size:42px;}
 
 h2{
   margin-top: 24px;
   font-size: 24px;
 }
 
-p{
+
+section p {
+  padding:4%;
   font-size: 17px;
   text-indent: 7px;
+  background-color: rgba(0, 0, 0, 0.11);
 }
 
 ul, ol, a{
@@ -52,9 +53,7 @@ video{
   object-fit:cover;
 }
 
-footer{
-  text-align: center;
-}
+footer{text-align: center;}
 
 /*-----GENERAL TAGS END----*/
 
@@ -91,9 +90,7 @@ footer{
   border-radius: 8px;
 }
 
-.nav__ul li:not(:hover){
-  transition:all 100ms;
-}
+.nav__ul li:not(:hover){transition:all 100ms;}
 
 .nav__ul a > img{
   position: relative;
@@ -108,6 +105,7 @@ footer{
   top:100%;
   left: 0%;
   text-align: center;
+
 }
 
 .nav__ul li:hover > ul{
@@ -124,9 +122,7 @@ footer{
   background-color: white;
 }
 
-.nav__ul li ul li:not(:hover){
-  transition: 100ms;
-}
+.nav__ul li ul li:not(:hover){transition: 100ms;}
 
 .banner section > img{
   display: flex;
@@ -146,10 +142,7 @@ footer{
   background-color: rgba(0, 0, 0, 0.11);
 }
 
-aside img{
-  height: 60vh;
-}
-
+aside img{height: 60vh;}
 /*------------------------*/
 
 
@@ -176,9 +169,7 @@ aside img{
   transform:rotate(5deg);
 }
 
-.album__selection--disc img:not(:hover){
-  transition: all 100ms;
-}
+.album__selection--disc img:not(:hover){transition: all 100ms;}
 
 /*-----(discgry.html subLinks)-----*/
 
@@ -197,14 +188,17 @@ img.alb-cover{
   padding: 16px;
   margin-left: -30%;
   margin-right: 20%;
-  color: white;
+  color: whitesmoke;
   z-index: -1;
-  background-color: rgba(238, 130, 238, 0.151);
+  /* background-color: rgba(238, 130, 238, 0.151); */
+  background-color: rgba(0, 0, 0, 0.418);
 }
 
+ol.songs-list{padding: 2%;}
+
 ol.songs-list li img{
-  width: 64px;
-  height: 64px;
+  width: 17%;
+  height: 17%;
 }
 /*-----discgry.html & subLinks END-----*/
 
@@ -237,9 +231,7 @@ ol.songs-list li img{
   filter:opacity(100%);
 }
 
-.profile-pics li a > img:not(:hover){
-  transition: all 100ms;
-}
+.profile-pics li a > img:not(:hover){transition: all 100ms;}
 /*-----disr.html END-----*/
 
 
@@ -251,3 +243,93 @@ form{
   align-items: center;
 }
 /*-----cu.html END-----*/
+
+
+
+
+/*-----MEDIA QUERIES-----*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  /*-----index.html-----*/
+  h1{font-size: 38px;}
+
+  .logo{display: none;}
+
+  .nav__ul{
+      bottom: 0%;
+      padding: 0%;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .nav__ul li{
+      justify-content: center;
+      font-size: 9px;
+  }
+
+  .nav__ul a > img{display: none;}
+
+  .intro__section{
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+  }
+
+  p{font-size: 12px;}
+
+  aside img {height: 40vh;}
+  /*-----index.html END-----*/
+
+
+
+  /*-----discgry.html-----*/
+  .album__selection article{
+      grid-template-columns: repeat(1, 1fr);
+      grid-auto-rows:218px;
+  }
+
+  .album__selection--disc img{
+      width: 175px;
+      height: 175px;
+  }
+  /*-----discgry END-----*/
+
+
+  /*-----discgry subLinks-----*/
+  img.alb-cover{
+    width: 55%;
+    height: 55%;
+  }
+
+  .selected__album{margin-top: 85%;}
+
+  .album__title{
+    font-size: 28px;
+    margin: 8% 0%;
+    padding:8px;
+    justify-content: flex-start;
+  }
+
+  /*-----discrgy subLinks END-----*/
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+.intro__section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
