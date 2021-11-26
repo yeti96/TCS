@@ -28,7 +28,7 @@ h2{
 }
 
 
-section p {
+section p{
   padding:4%;
   font-size: 17px;
   text-indent: 7px;
@@ -54,12 +54,10 @@ video{
 }
 
 footer{text-align: center;}
-
 /*-----GENERAL TAGS END----*/
 
 
 /*-----(index.html)-----*/
-
 .logo{
   z-index: 1;
   position: relative;
@@ -78,7 +76,7 @@ footer{text-align: center;}
   background: linear-gradient( 120deg, #ffcbf2a2 0%, #deaaff9d 35%, #c0fdff9c 100% );
 }
 
-.nav__ul li {
+.nav__ul li{
   display: inline-block;
   position: relative;
   padding:10px;
@@ -105,7 +103,6 @@ footer{text-align: center;}
   top:100%;
   left: 0%;
   text-align: center;
-
 }
 
 .nav__ul li:hover > ul{
@@ -114,7 +111,6 @@ footer{text-align: center;}
   position:absolute;
   background: linear-gradient(120deg,  #deaaff 25%,#c8e7ff 50%, #ffcbf2 100%);
   border-radius: 6px;
-
 }
 
 .nav__ul li ul li:hover{
@@ -147,7 +143,6 @@ aside img{height: 60vh;}
 
 
 /*-----(discgry.html)-----*/
-
 .album__selection article{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -171,15 +166,16 @@ aside img{height: 60vh;}
 
 .album__selection--disc img:not(:hover){transition: all 100ms;}
 
-/*-----(discgry.html subLinks)-----*/
 
+/*-----(discgry.html subLinks)-----*/
 img.alb-cover{
   display: flex;
   flex-flow: row wrap;
+  margin-left: 3%;
   width: 350px;
   height: 350px;
   border-radius: 16px;
-  box-shadow: 27px 27px 20px rgba(0, 0, 0, 0.534);
+  box-shadow: 15px 15px 12px rgba(0, 0, 0, 0.4);
 }
 
 .album__title{
@@ -190,21 +186,19 @@ img.alb-cover{
   margin-right: 20%;
   color: whitesmoke;
   z-index: -1;
-  /* background-color: rgba(238, 130, 238, 0.151); */
   background-color: rgba(0, 0, 0, 0.418);
 }
 
 ol.songs-list{padding: 2%;}
 
 ol.songs-list li img{
-  width: 17%;
-  height: 17%;
+  width: 16%;
+  height: 16%;
 }
 /*-----discgry.html & subLinks END-----*/
 
 
 /*-----(disr.html)-----*/
-
 .disr-logo img{
   height: 100%;
   width: 100%;
@@ -250,7 +244,7 @@ form{
 /*-----MEDIA QUERIES-----*/
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px){
 
   /*-----index.html-----*/
   h1{font-size: 38px;}
@@ -258,49 +252,52 @@ form{
   .logo{display: none;}
 
   .nav__ul{
-      bottom: 0%;
-      padding: 0%;
-      justify-content: center;
-      align-items: center;
+    bottom: 0%;
+    padding: 0%;
+    justify-content: center;
+    align-items: center;
   }
   
   .nav__ul li{
-      justify-content: center;
-      font-size: 9px;
+    justify-content: center;
+    font-size: 10px;
   }
 
   .nav__ul a > img{display: none;}
 
-  .intro__section{
-      flex-flow: column wrap;
-      justify-content: center;
-      align-items: center;
+  .banner section > img{
+    height:70vh;
   }
 
-  p{font-size: 12px;}
+  .intro__section{
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
 
-  aside img {height: 40vh;}
+  p{font-size: 12px !important;}
+
+  aside img{height: 30vh;}
   /*-----index.html END-----*/
-
 
 
   /*-----discgry.html-----*/
   .album__selection article{
-      grid-template-columns: repeat(1, 1fr);
-      grid-auto-rows:218px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows:218px;
   }
 
   .album__selection--disc img{
-      width: 175px;
-      height: 175px;
+    width: 175px;
+    height: 175px;
   }
   /*-----discgry END-----*/
 
 
   /*-----discgry subLinks-----*/
   img.alb-cover{
-    width: 55%;
-    height: 55%;
+    width: 175px;
+    height: 175px;
   }
 
   .selected__album{margin-top: 85%;}
@@ -311,25 +308,119 @@ form{
     padding:8px;
     justify-content: flex-start;
   }
-
   /*-----discrgy subLinks END-----*/
+
+
+  /*-----disr.html-----*/
+  .profile-pics{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding: 0%;
+  }
+  
+  .profile-pics img{
+    width: 80%;
+    height:80%;
+  }
+  /*-----disr END-----*/
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-.intro__section{
+
+  /*----index.html-----*/
+  .logo{display: none;}
+
+  .nav__ul{
+    bottom: 0%;
+    padding: 0%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro__section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
- }
+  }
+  /*----index END-----*/
+
+
+  /*-----discgry.html-----*/
+  .album__selection article{
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows:280px;
+  }
+
+  .album__selection--disc img{
+    width:150px;
+    height:150px;
+  }
+  /*-----discgry END-----*/
+
+
+  /*-----discgry subLinks----*/
+  img.alb-cover{
+    width: 200px;
+    height: 200px;
+  }
+  /*-----discgry subLinks END----*/
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px){
+  /*----index.html-----*/
+  .logo{
+    display:inline-block;
+    position: absolute;
+    transform: scale(0.6);
+    top: 0%;
+  }
+
+  .nav__ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    position: relative;
+  }
+  /*----index END-----*/
+
+
+  /*----discgry.html-----*/
+  .album__selection--disc img{
+    width:225px;
+    height:225px;
+  }
+
+  /*----discgry subLinks-----*/
+  img.alb-cover{
+    width: 250px;
+    height: 250px;
+  }
+  /*----discgry & subLinks END-----*/
 }
+
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px){
+  /*----index.html-----*/
+  .logo{transform: scale(1);}
+
+  .intro__section{
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  /*----index END-----*/
+  
+
+  /*----discgry subLinks-----*/
+  .selected__album{
+    margin-top: 30%;
+  }
+  img.alb-cover{
+    width: 320px;
+    height: 320px;
+  }
+  /*----discgry subLinks END-----*/
 }
