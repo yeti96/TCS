@@ -27,7 +27,6 @@ h2{
   font-size: 24px;
 }
 
-
 section p{
   padding:4%;
   font-size: 17px;
@@ -91,8 +90,7 @@ footer{text-align: center;}
 .nav__ul li:not(:hover){transition:all 100ms;}
 
 .nav__ul a > img{
-  position: relative;
-  top: 10px;
+
   height: 32px;
   width: 32px;
 }
@@ -124,7 +122,7 @@ footer{text-align: center;}
   display: flex;
   position: relative;
   z-index: -1;
-  transform: translate(0px, -250px);
+  transform: translate(0px, -100px);
   left: -1px;
   width: 100%;
   height:80vh;
@@ -147,7 +145,7 @@ aside img{height: 60vh;}
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 430px;
-  margin: 0% 8% 0% 8%;
+  /* margin: 0% 8% 0% 8%; */
   justify-items: center;
   align-items: center;
 }
@@ -199,7 +197,7 @@ ol.songs-list li img{
 
 
 /*-----(disr.html)-----*/
-.disr-logo img{
+section.disr-logo img {
   height: 100%;
   width: 100%;
 }
@@ -300,7 +298,7 @@ form{
     height: 175px;
   }
 
-  .selected__album{margin-top: 85%;}
+  .selected__album{margin-top: 65%;}
 
   .album__title{
     font-size: 28px;
@@ -416,7 +414,7 @@ form{
 
   /*----discgry subLinks-----*/
   .selected__album{
-    margin-top: 30%;
+    margin-top: 20%;
   }
   img.alb-cover{
     width: 320px;
